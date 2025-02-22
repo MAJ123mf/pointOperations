@@ -1,7 +1,6 @@
 from point2d import Point2d
 from Point2dListOperations import Point2dList
 
-
 p1 = Point2d(1, 2.0, 3.0)
 p2 = Point2d(2, 4.5, 6.7)
 p3 = Point2d(3, 8.1, 9.3)
@@ -9,7 +8,6 @@ p4 = Point2d(4, 5.4, 5.0)
 listOfPoints = [p1, p2, p3, p4]
 
 points = Point2dList(listOfPoints)
-
 
 points.printListOfPoints()
 [sumX, sumY] = points.sum_XY()            # points so instanca objekta Point2dList sum_XY je metoda istega objekta zato klic points.sumXY()
@@ -24,9 +22,3 @@ translation_vector = [100, 100]
 translated_random_points = points.translation_XY(translation_vector)
 print("Translated points: [+100, +100]")
 translated_random_points.printListOfPoints()
-
-
-# print("Točka 2: ", points.get_point(2).getAsList())  # Pridobi točko št. 2
-# points.remove_point(1)                               # Odstrani točko št. 1
-# print("We have deleted point 1.")
-# points.printListOfPoints();
